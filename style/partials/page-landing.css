@@ -91,7 +91,7 @@ margin-right: 2.4rem;
     }
 }
 
- @media (min-width:1100px) { /*todos as telas q forem de 1100 px par acima ira se aplicar esses padrões*/
+ @media (min-width:700px) { /*todos as telas q forem de 1100 px par acima ira se aplicar esses padrões*/
 #page-landing #container {
     max-width: 1100px;
     display: grid;
@@ -102,6 +102,7 @@ margin-right: 2.4rem;
     "button button texting" ;
     column-gap: 87px;/*da uma separada na coluna*/
     row-gap: 86px;/*da uma separada na linha*/
+
 
     }
 
@@ -119,7 +120,7 @@ margin-right: 2.4rem;
 
     .hero-image{
         grid-area: image;
-        height: 350px;
+        height: 340px;
     }
     .buttons-container{
         grid-area: button;
