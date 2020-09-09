@@ -69,11 +69,7 @@
                    <input name="name" id="name" required>
 
                </div>
-               <div class="input-block">
-                   <label for="name">Nome completo</label>
-                   <input name="name" id="name" required>
-
-               </div>
+         
                <div class="input-block">
                    <label for="avatar">Link da sua foto <small>(comece com https://)</small></label>
                    <input name="avatar" id="avatar" type="url" required>
@@ -117,7 +113,78 @@
                         <input type="cost" id="cost" type="number" required>
                     </div>
            </fieldset>
+
+           <fieldset>
+               <legend>Horários disponíveis
+                   <button id="add-time">+ Novo Horário</button>
+               </legend>
+
+               <div class="schedule-item">
+                   
+                   <div class="select-block">
+                       <label for="weekday">Dia da semana</label>
+                       <select name="weekday[]"required>
+                           <option value="">Selecione um dia</option>
+                           
+                           <option value="0">Domingo</option>
+                           <option value="1">Segunda</option>
+                           <option value="2">Terça</option>
+                           <option value="3">Quarta</option>
+                           <option value="4">Quinta</option>
+                           <option value="5">Sexta</option>
+                           <option value="6">sábado</option>
+                        </select>
+                        <div class="input-block">
+                            <label for="time-from">Das</label>
+                            <input type="time"  name="time-from[]" required>
+                        </div>
+                        
+                        <div class="input-block">
+                            <label for="time-two">Até</label>
+                            <input type="time"  name="time-two[]" required>
+                        </div>
+                    </div>
+                    
+               </div>
+               <div class="schedule-item">
+
+                <div class="select-block">
+                    <label for="weekday">Dia da semana</label>
+                    <select name="weekday[]"required>
+                        <option value="">Selecione um dia</option>
+
+                        <option value="0">Domingo</option>
+                        <option value="1">Segunda</option>
+                        <option value="2">Terça</option>
+                        <option value="3">Quarta</option>
+                        <option value="4">Quinta</option>
+                        <option value="5">Sexta</option>
+                        <option value="6">sábado</option>
+                    </select>
+                    
+                </div>
+                
+                <div class="input-block">
+                    <label for="time-from">Das</label>
+                    <input type="time"  name="time-from[]" required>
+                </div>
+                
+                <div class="input-block">
+                    <label for="time-two">Até</label>
+                    <input type="time"  name="time-two[]" required>
+                </div>
+            </div>
+                
+           </fieldset>
        </form>
+
+       <footer>
+           <p>
+               <img src="/images/icons/warning.svg" alt="Aviso importante">Importante! <br> Preencha todos os dados
+           </p>
+           <button type="submit" form="create-class">Salvar cadastro</button>
+       </footer><!--o from com o id dentro faz entender q o butao ira enviar o tal formulario-->
+
     </main>
 
     </div>
