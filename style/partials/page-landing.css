@@ -133,4 +133,10 @@ margin-right: 2.4rem;
         font-size: 1.5rem;
     }
 
+    .assinatura p {
+       font-size:10px;
+       padding: auto auto;
+       margin-top:-2rem;
+    }
+
 }
